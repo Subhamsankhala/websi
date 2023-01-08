@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+a,button{
+    cursor: pointer;
+} 
+@keyfromes pan {
+    100% {
+        background-position: 15% 50%;
+    }
+}
+body {
+    display: grid;
+    place-items: center;
+    margin:0;
+    padding:0 24px;
+    background-image: url("bg.svg");
+    background-size: cover;
+    animation:
+     pan 6s infinite alternate linear;
+} 
+
+@media (widh >= 500px) {
+    body {
+        padding: 0;
+    }
+}
